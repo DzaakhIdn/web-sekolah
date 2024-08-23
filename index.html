@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMA IT HSI IDN</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      font-family: "Outfit", sans-serif;
+    }
+    body {
+      background-color: #f0f9ff;
+    }
+  </style>
+  <body>
+    <!-- Sect Nav -->
+    <nav class="w-full h-auto pt-14 px-8">
+      <div
+        class="regist-alert w-full h-14 bg-blue-400 flex justify-center items-center gap-4 rounded-md border-[3px] border-slate-800"
+      >
+        <p class="text-slate-800 font-medium text-[14px] md:text-[16px]">
+          Tunggu tahun ajaran baru, Terima Kasih🥰
+        </p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 256 256"
+          class="h-5 fill-slate-900"
+        >
+          <path
+            d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="box relative w-full">
+        <div
+          class="nav-item w-full h-auto border-[3px] border-slate-800 rounded-md mt-6 flex"
+        >
+          <div class="logo flex items-center py-5 px-3 gap-3 bg-[#4EAAFF]">
+            <img src="img/logo-idn.png" alt="logo-idn" class="w-11 h-11" />
+            <p class="title-logo font-semibold text-slate-800">
+              SMA IT HSI-IDN
+            </p>
+          </div>
+          <div class="empty border-x-[3px] w-44 h-auto border-slate-800"></div>
+          <div
+            class="toggle bg-[#E5F3FF] flex m-auto items-center justify-end w-auto h-auto"
+          >
+            <input
+              type="checkbox"
+              id="hamburger"
+              class="hamburger peer"
+              hidden
+            />
+            <label
+              for="hamburger"
+              class="peer-checked:hamburger block relative z-20 p-6 cursor-pointer"
+            >
+              <div
+                aria-hidden="true"
+                class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"
+              ></div>
+              <div
+                aria-hidden="true"
+                class="m-auto h-0.5 w-6 mt-2 rounded bg-sky-900 transition duration-300"
+              ></div>
+              <div
+                class="ml-auto h-0.5 w-3 mt-2 rounded bg-sky-900 transition duration-300"
+              ></div>
+            </label>
+          </div>
+        </div>
+        <div
+          class="nav-content w-full border-[3px] border-slate-900 overflow-hidden bg-[#9dd0ff] rounded-md h-72"
+          id="nav"
+        >
+          <ul
+            class="font-medium flex flex-col justify-center items-center gap-4 text-lg"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Student Life</a></li>
+            <li>
+              <a href="#" class="bg-[#4EAAFF] py-3 px-4 rounded-lg">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
