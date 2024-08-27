@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -22,7 +22,7 @@
   </style>
   <body>
     <!-- Sect Nav -->
-    <nav class="m-auto p-5">
+    <div class="p-5">
       <div
         class="regist-alert w-full h-14 bg-blue-400 flex justify-center items-center gap-4 rounded-md border-[3px] border-slate-800"
       >
@@ -39,27 +39,169 @@
           ></path>
         </svg>
       </div>
-
       <div
-        class="nav w-full h-auto border-[3px] border-slate-900 rounded-md mt-5 flex justify-between items-center"
+        class="border-[3px] border-slate-900 rounded-md relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center mt-5"
       >
-        <div class="logo flex justify-center items-center p-4 gap-3">
-          <img src="img/logo-idn.png" alt="" class="w-11 h-11" />
-          <p class="font-semibold text-slate-800">SMA IT HSI-IDN</p>
-        </div>
-        <div class="nav-items">
-          <ul class="lg:flex justify-center items-center gap-7 text-sm md:text-base pr-5 hidden">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Academics</a></li>
-            <li><a href="">Admissions</a></li>
-            <li><a href="">Student Life</a></li>
-            <li><a href="">Contact</a></li>
+        <a
+          href="#"
+          class="flex items-center whitespace-nowrap text-2xl font-black gap-2"
+        >
+          <img
+            src="img/logo-idn.png"
+            alt=""
+            class="w-11 h-11"
+            aria-hidden="true"
+          />
+          <span class="text-slate-900">SMA IT HSI-IDN</span>
+        </a>
+        <input type="checkbox" class="peer hidden" id="navbar-open" />
+        <label
+          class="absolute top-6 right-7 cursor-pointer md:hidden"
+          for="navbar-open"
+        >
+          <span class="sr-only">Toggle Navigation</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </label>
+        <nav
+          aria-label="Header Navigation"
+          class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start"
+        >
+          <ul
+            class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0"
+          >
+            <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+              <a href="#">Home</a>
+            </li>
+            <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+              <a href="#">About Us</a>
+            </li>
+            <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+              <a href="#">Academics</a>
+            </li>
+            <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+              <a href="#">Admission</a>
+            </li>
+            <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+              <a href="#">Student Life</a>
+            </li>
+            <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+              <button
+                class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
+              >
+                Login
+              </button>
+            </li>
           </ul>
+        </nav>
+      </div>
+    </div>
+
+    <header class="p-5 w-full h-auto">
+      <div class="bungkus">
+        <div
+          class="img-hero w-full border-[3px] border-slate-900 bg-[#4EAAFF] p-1 relative"
+        >
+          <img src="img/hero-img.JPG" alt="" />
+          <div class="shape absolute -left-2 -bottom-2">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12.689"
+                r="11"
+                fill="white"
+                stroke="#262626"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+          <div class="shape absolute -right-2 -bottom-2">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12.689"
+                r="11"
+                fill="white"
+                stroke="#262626"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+          <div class="shape absolute -left-2 -top-2">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12.689"
+                r="11"
+                fill="white"
+                stroke="#262626"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+          <div class="shape absolute -right-2 -top-2">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12.689"
+                r="11"
+                fill="white"
+                stroke="#262626"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="content">
+          <p class="sub-title">
+            Selamat Datang Di <span class="font-bold">SMA IT HSI-IDN</span>
+          </p>
+          <h1
+            class="title font-extrabold text-slate-900 text-3xl"
+            style="font-family: 'Raleway'"
+          >
+            Where Young Minds Blossom and
+            <span class="text-[#4DB4FF]">Dreams Take Flight</span>
+          </h1>
         </div>
       </div>
-    </nav>
-
+    </header>
     <script src="src/main.js"></script>
   </body>
 </html>
