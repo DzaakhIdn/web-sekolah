@@ -890,6 +890,10 @@ video {
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -916,6 +920,26 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[6\] {
+  width: 6;
+}
+
+.w-\[615\] {
+  width: 615;
+}
+
+.w-\[615px\] {
+  width: 615px;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-64 {
@@ -2106,6 +2130,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2262,38 +2291,6 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
-.leading-loose {
-  line-height: 2;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
-}
-
-.leading-\[\] {
-  line-height: ;
-}
-
-.leading-\[1\.50\] {
-  line-height: 1.50;
-}
-
-.leading-\[1\.\] {
-  line-height: 1.;
-}
-
-.leading-\[1\.40\] {
-  line-height: 1.40;
-}
-
-.leading-\[1\.4\] {
-  line-height: 1.4;
 }
 
 .leading-\[1\.38\] {
@@ -2814,6 +2811,10 @@ video {
     margin-left: 6rem;
   }
 
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
   .md\:ml-auto {
     margin-left: auto;
   }
@@ -2822,20 +2823,28 @@ video {
     margin-right: 3rem;
   }
 
-  .md\:ml-5 {
-    margin-left: 1.25rem;
-  }
-
-  .md\:ml-8 {
-    margin-left: 2rem;
-  }
-
   .md\:hidden {
     display: none;
   }
 
+  .md\:h-\[\] {
+    height: ;
+  }
+
+  .md\:h-\[663px\] {
+    height: 663px;
+  }
+
   .md\:max-h-full {
     max-height: 100%;
+  }
+
+  .md\:w-\[6\] {
+    width: 6;
+  }
+
+  .md\:w-\[615px\] {
+    width: 615px;
   }
 
   .md\:flex-row {
@@ -2867,9 +2876,23 @@ video {
   .md\:text-\[40px\] {
     font-size: 40px;
   }
+}
 
-  .md\:text-\[40\] {
-    color: 40;
+@media (min-width: 1024px) {
+  .lg\:h-\[663px\] {
+    height: 663px;
+  }
+
+  .lg\:w-\[24rem\] {
+    width: 24rem;
+  }
+
+  .lg\:w-\[615px\] {
+    width: 615px;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 }
 
