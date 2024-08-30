@@ -3,13 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .hamburger div:first-child {
-    @apply rotate-45 translate-y-1.5;
-  }
-  .hamburger div:nth-child(2) {
-    @apply -rotate-45 -translate-y-1;
-  }
-  .hamburger div:last-child {
-    @apply opacity-0;
+  .desc{
+    @apply text-[16px] font-medium
   }
 }

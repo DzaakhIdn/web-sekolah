@@ -24,7 +24,7 @@
   <body>
     <!-- Sect Nav -->
     <div
-      class="regist-alert w-full h-14 bg-blue-400 flex justify-center items-center gap-4 rounded-md border-[3px] border-slate-800"
+      class="regist-alert w-full h-14 bg-blue-400 flex justify-center items-center gap-4 rounded-md border-[2px] border-slate-800"
     >
       <p class="text-slate-800 font-medium text-[14px] md:text-[16px]">
         Tunggu tahun ajaran baru, Terima Kasih🥰
@@ -40,7 +40,7 @@
       </svg>
     </div>
     <div
-      class="border-[3px] border-slate-900 rounded-md relative flex flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center mt-5"
+      class="border-[2px] border-slate-800 rounded-md relative flex flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center mt-5"
     >
       <a
         href="#"
@@ -111,9 +111,11 @@
     <header class="py-10 w-full h-auto px-10">
       <div class="bungkus flex flex-col md:flex-row">
         <div
-          class="img-hero w-full lg:w-[615px] h-auto lg:h-[663px] border-[3px] border-slate-900 bg-[#4EAAFF] p-1 relative"
+          class="img-hero w-auto h-[410px] md:w-[615px] md:h-[663px] border-[3px] border-slate-900 bg-[#4EAAFF] p-1 relative"
         >
-          <img src="https://images.unsplash.com/photo-1724488258906-ce80713e28ce?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  class="w-full h-full "/>
+          <div
+            class="bg-img bg-[url(./../img/hero.png)] bg-cover bg-no-repeat w-full h-full"
+          ></div>
           <div class="shape absolute -left-2 -bottom-2">
             <svg
               width="24"
@@ -188,9 +190,9 @@
           </div>
         </div>
         <div
-          class="content flex flex-col gap-5 items-center justify-center mt-5 lg:items-start md:ml-8 lg:w-[24rem]"
+          class="content flex flex-col gap-5 items-center justify-center mt-5 lg:items-start md:ml-8 lg:w-2/4"
         >
-          <p class="sub-title border-b-2 border-slate-800 ">
+          <p class="sub-title border-b-2 border-slate-800">
             Selamat Datang Di <span class="font-bold">SMA IT HSI-IDN</span>
           </p>
           <h1
@@ -201,16 +203,58 @@
             <span class="text-blue-400">Dreams Take Flight</span>
           </h1>
           <p
-            class="description font-medium text-[16px] text-center md:text-left"
+            class="desc text-center md:text-left"
           >
             Sekolah kami yang ramah menyediakan lingkungan yang mengasuh dan
             menstimulasi, menumbuhkan kecintaan untuk belajar yang berlangsung
             seumur hidup. Bergabunglah bersama kami untuk memulai perjalanan
             pendidikan yang menyenangkan!
           </p>
+
+          <div
+            class="achievements text-slate-800 w-full h-auto bg-[#E5F4FF] border-[2px] shadow-3xl rounded-md border-slate-900 py-8 md:py-3 flex flex-col gap-10 px-8 md:flex-row md:justify-start md:gap-8 mt-5"
+          >
+            <div
+              class="achievments-content flex flex-col items-center border-b-[2px] border-slate-700 pb-3 md:border-none"
+            >
+              <h1 class="font-extrabold text-[34px]">+76</h1>
+              <p class="desc">Murid Aktif</p>
+            </div>
+            <div
+              class="achievments-content flex flex-col items-center border-b-[2px] border-slate-700 pb-3 md:border-none"
+            >
+              <h1 class="font-extrabold text-[34px]">+1</h1>
+              <p class="desc">Penghargaan</p>
+            </div>
+            <div class="achievments-content flex flex-col items-center">
+              <h1 class="font-extrabold text-[34px]">+6</h1>
+              <p class="desc">Pengajar Profesional</p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
+    <!-- Benefits -->
+    <section class="benefits mt-8">
+      <div class="text flex justify-center items-center flex-col">
+        <p
+          class="text-[14px] font-medium bg-slate-50 border-2 border-slate-800 rounded-md py-2 px-4"
+        >
+          Children Deserve Bright Future
+        </p>
+        <h1 class="title font-bold text-[38px]" style="font-family: 'Raleway'">
+          Our Benefits
+        </h1>
+        <p class="desc text-center">
+          With a dedicated team of experienced educators, state-of-the-art
+          facilities, and a comprehensive curriculum, we aim to lay a strong
+          foundation for your child's future.
+        </p>
+      </div>
+
+      <div class="benefits-items"></div>
+    </section>
     <script src="src/main.js"></script>
   </body>
 </html>
