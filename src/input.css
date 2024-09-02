@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-  .desc{
-    @apply text-[16px] font-medium
+  .desc {
+    @apply text-[16px] font-medium;
+  }
+  .icon {
+    @apply flex items-center justify-center absolute w-16 h-16 bg-[#E5F4FF] border-2 border-slate-800 rounded-lg -top-5 left-4;
+  }
+  .card-content {
+    @apply w-full h-auto bg-white border border-slate-800 border-r-8 border-b-8 rounded-lg relative;
   }
 }
