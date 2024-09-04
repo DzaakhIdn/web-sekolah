@@ -12,7 +12,28 @@
   .card-content {
     @apply w-full h-auto bg-white border border-slate-800 border-r-8 border-b-8 rounded-lg relative;
   }
-  .button-span{
-    @apply inline-flex items-center justify-center w-12 h-12 rounded-md bg-white border-2 border-slate-700
+  .button-span {
+    @apply inline-flex items-center justify-center w-12 h-12 rounded-md bg-white border-2 border-slate-700;
+  }
+  .wrapper .carrousel {
+    @apply grid grid-flow-col auto-cols-grid-card gap-5 overflow-hidden;
+  }
+  .wrapper {
+    @apply max-w-[1100px] w-full;
+  }
+  .carrousel .card {
+    @apply bg-white border-2 border-r-8 border-b-8 border-slate-900 rounded-lg h-[374px] flex items-center justify-center flex-col p-4 cursor-pointer;
+  }
+  .card .img img {
+    @apply w-full h-full;
+  }
+  .toggle-icon {
+    @apply bg-white border-2 border-slate-900 w-12 h-12 p-2 rounded-md flex justify-center items-center cursor-pointer absolute;
+  }
+  .wrapper .toggle-icon:frist-child {
+    @apply -left-[22px];
+  }
+  .toggle-icon svg {
+    @apply w-10 h-10;
   }
 }
