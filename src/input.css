@@ -16,13 +16,13 @@
     @apply inline-flex items-center justify-center w-12 h-12 rounded-md bg-white border-2 border-slate-700;
   }
   .wrapper .carrousel {
-    @apply grid grid-flow-col lg:auto-cols-grid-card md:auto-cols-grid-card-md auto-cols-[100%] gap-5 overflow-hidden;
+    @apply grid grid-flow-col lg:auto-cols-grid-card md:auto-cols-grid-card-md auto-cols-[100%] gap-4 overflow-x-auto no-scrollbar overflow-hidden;
   }
   .wrapper {
     @apply max-w-[1100px] w-full relative;
   }
   .carrousel .card {
-    @apply bg-white border-2 border-r-8 border-b-8 border-slate-900 rounded-lg h-[374px] flex items-center justify-center flex-col p-4 cursor-pointer;
+    @apply bg-white border-2 border-r-8 border-b-8 border-slate-900 rounded-lg h-[374px] flex items-center justify-center flex-col p-4 cursor-pointer snap-start;
   }
   .card .img img {
     @apply w-full h-full;
@@ -30,8 +30,11 @@
   .toggle-icon {
     @apply bg-white border-2 border-slate-900 w-12 h-12 p-2 rounded-md flex justify-center items-center cursor-pointer absolute xl:top-1/2 -bottom-[80px] -translate-y-1/2;
   }
+  .carrousel.dragging {
+    @apply scroll-auto snap-none;
+  }
   .carrousel.dragging .card {
-    @apply cursor-grab select-none
+    @apply cursor-grab select-none;
   }
   .wrapper .toggle-icon:first-child {
     @apply xl:-right-[66px] right-1;

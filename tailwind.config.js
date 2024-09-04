@@ -9,8 +9,21 @@ module.exports = {
       gridAutoColumns: {
         'grid-card' : 'calc((100% / 3) - 12px)',
         'grid-card-md' : 'calc((100% / 2) - 9px)',
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({addUtilities}) {
+      const newUtilities = {
+        '.no-scrollbar::-webkit-scrollbar':{
+          display:'none',
+        },
+        '.no-scrollbar':{
+          'ms-overflow-style':'none',
+          'scrollbar-width':'none',
+        }
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 }

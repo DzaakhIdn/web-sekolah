@@ -1,11 +1,13 @@
 const carousel = document.querySelector(".carrousel");
 const arrowBtns = document.querySelectorAll(".wrapper .toggle-icon");
+const firsCardWidth = document.querySelector(".card").offsetWidth;
+const carouselChildrens = [...carousel.children]
 
 let isDragging = false, startX, startScrollLeft;
 
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        console.log(btn.id)
+        carousel.scrollLeft += btn.id === "left" ? -firsCardWidth : firsCardWidth;
     })
 })
 

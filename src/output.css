@@ -633,8 +633,18 @@ video {
   display: grid;
   grid-auto-columns: 100%;
   grid-auto-flow: column;
-  gap: 1.25rem;
+  gap: 1rem;
   overflow: hidden;
+  overflow-x: auto;
+}
+
+.wrapper .carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper .carrousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @media (min-width: 768px) {
@@ -659,6 +669,7 @@ video {
   display: flex;
   height: 374px;
   cursor: pointer;
+  scroll-snap-align: start;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -702,6 +713,11 @@ video {
   .toggle-icon {
     top: 50%;
   }
+}
+
+.carrousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
 }
 
 .carrousel.dragging .card {
@@ -2933,6 +2949,15 @@ video {
 
 .forced-color-adjust-none {
   forced-color-adjust: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @media (min-width: 640px) {
