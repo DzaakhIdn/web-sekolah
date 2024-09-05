@@ -7,7 +7,7 @@
     @apply text-[16px] font-medium;
   }
   .icon {
-    @apply flex items-center justify-center absolute w-16 h-16 bg-[#E5F4FF] border-2 border-slate-800 rounded-lg -top-5 left-4;
+    @apply flex items-center justify-center absolute w-16 h-16 bg-bg-secondary border-2 border-slate-800 rounded-lg -top-5 left-4;
   }
   .card-content {
     @apply w-full h-auto bg-white border border-slate-800 border-r-8 border-b-8 rounded-lg relative;
@@ -30,9 +30,6 @@
   .toggle-icon {
     @apply bg-white border-2 border-slate-900 w-12 h-12 p-2 rounded-md flex justify-center items-center cursor-pointer absolute xl:top-1/2 -bottom-[80px] -translate-y-1/2;
   }
-  .carrousel.no-transition {
-    @apply
-  }
   .carrousel.dragging {
     @apply snap-none;
   }
@@ -47,5 +44,11 @@
   }
   .toggle-icon svg {
     @apply w-10 h-10;
+  }
+  .button {
+    @apply w-full h-auto bg-bg-secondary border border-slate-900 border-b-8 border-r-8 rounded-md text-[#333333] flex justify-center items-center py-4
+  }
+  .line {
+    @apply border-2 w-2/4 border-slate-900 border-dashed bg-bg-secondary relative
   }
 }

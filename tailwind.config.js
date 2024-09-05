@@ -10,6 +10,9 @@ module.exports = {
         'grid-card' : 'calc((100% / 3) - 12px)',
         'grid-card-md' : 'calc((100% / 2) - 9px)',
       },
+      backgroundColor: {
+        'bg-secondary' : '#E5F4FF'
+      }
     },
   },
   plugins: [
