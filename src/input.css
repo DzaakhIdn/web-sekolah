@@ -46,9 +46,24 @@
     @apply w-10 h-10;
   }
   .button {
-    @apply w-full h-auto bg-bg-secondary border border-slate-900 border-b-8 border-r-8 rounded-md text-[#333333] flex justify-center items-center py-4
+    @apply w-full h-auto bg-bg-secondary border border-slate-900 border-b-8 border-r-8 rounded-md text-[#333333] flex justify-center items-center py-4;
   }
   .line {
-    @apply border-2 w-2/4 border-slate-900 border-dashed bg-bg-secondary relative
+    @apply border-2 w-2/4 border-slate-900 border-dashed bg-bg-secondary relative;
+  }
+  .blog-card {
+    @apply w-full h-auto border bg-white border-slate-900 border-r-8 border-b-8 rounded-md flex flex-col justify-center items-center p-7 gap-10;
+  }
+  .contact {
+    @apply flex justify-start items-center;
+  }
+  .icon-contact {
+    @apply bg-bg-secondary border border-slate-900 rounded-md p-2;
+  }
+  .copyright {
+    @apply flex gap-1 justify-center divide-x divide-slate-900;
+  }
+  .sosmed-icon {
+    @apply flex justify-center items-center gap-3 mt-6;
   }
 }
