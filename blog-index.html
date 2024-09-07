@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMA IT HSI IDN</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Outfit", sans-serif;
+      }
+      body {
+        background-color: #f0f9ff;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav Sect -->
+    <div
+      class="regist-alert w-full h-14 bg-blue-400 flex justify-center items-center gap-4 rounded-md border-[2px] border-slate-800"
+    >
+      <p class="text-slate-800 font-medium text-[14px] md:text-[16px]">
+        Tunggu tahun ajaran baru, Terima Kasih🥰
+      </p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 256 256"
+        class="h-5 fill-slate-900"
+      >
+        <path
+          d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+        ></path>
+      </svg>
+    </div>
+    <div
+      class="border-[2px] border-slate-800 rounded-md relative flex flex-col overflow-hidden p-4 md:mx-auto md:flex-row md:items-center mt-5"
+    >
+      <a
+        href="#"
+        class="flex items-center whitespace-nowrap text-2xl font-black gap-2"
+      >
+        <img
+          src="img/logo-idn.png"
+          alt=""
+          class="w-11 h-11"
+          aria-hidden="true"
+        />
+        <span class="text-slate-900">SMA IT HSI-IDN</span>
+      </a>
+      <input type="checkbox" class="peer hidden" id="navbar-open" />
+      <label
+        class="absolute top-6 right-7 cursor-pointer md:hidden"
+        for="navbar-open"
+      >
+        <span class="sr-only">Toggle Navigation</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </label>
+      <nav
+        aria-label="Header Navigation"
+        class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start"
+      >
+        <ul
+          class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0"
+        >
+          <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+            <a href="#">Home</a>
+          </li>
+          <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+            <a href="#">About Us</a>
+          </li>
+          <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+            <a href="#">Academics</a>
+          </li>
+          <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+            <a href="#">Blog</a>
+          </li>
+          <li class="text-gray-600 md:mr-12 hover:text-blue-600">
+            <button
+              class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Welcome Sect -->
+    <header class="welcome">
+      <img
+        src="/img/abstract-elemant.png"
+        alt=""
+        class="absolute w-32 h-32 lg:w-24 lg:h-24 top-0 left-0"
+      />
+      <div class="text flex justify-center items-center flex-col gap-3">
+        <p
+          class="text-[14px] font-medium bg-slate-50 border-2 border-slate-800 rounded-md py-2 px-4"
+        >
+          Our Blog✨
+        </p>
+        <h1
+          class="title font-bold text-[28px] text-center md:text-left"
+          style="font-family: 'Raleway'"
+        >
+          Welcome To Our Blog
+        </h1>
+      </div>
+      <p class="desc text-center md:text-left md:w-3/4 lg:w-1/2">
+        Blog sekolah kami adalah jendela menuju dunia belajar yang seru dan
+        inspiratif. Di sini, kamu akan menemukan berbagai cerita menarik tentang
+        kegiatan siswa, tips belajar efektif, wawancara dengan guru inspiratif,
+        serta informasi terbaru tentang perkembangan sekolah. Bergabunglah
+        dengan komunitas kami dan jadilah bagian dari perjalanan belajar yang
+        tak terlupakan.
+      </p>
+    </header>
+
+    <main class="main mt-10">
+      <div class="text flex justify-center items-center flex-col gap-3">
+        <p
+          class="text-[14px] font-medium bg-slate-50 border-2 border-slate-800 rounded-md py-2 px-4"
+        >
+          Lastest update
+        </p>
+        <h1
+          class="title font-bold text-[38px] text-center"
+          style="font-family: 'Raleway'"
+        >
+          Read Our Lastest Updates
+        </h1>
+        <p class="desc text-center md:w-3/4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quis,
+          exercitationem eveniet voluptas quibusdam doloremque ab. Earum nisi
+          qui accusamus!
+        </p>
+      </div>
+
+      <!-- Card Container -->
+      <div class="card-blog-container">
+        <div class="card-blog">
+          <img src="/img/hero-img.JPG" alt="" />
+          <h1 class="title" style="font-family: 'Raleway'">
+            Upacara Nusantara Spirit day
+          </h1>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            odit recusandae ad corporis, sequi iusto cumque quia accusamus
+            aspernatur nostrum.
+          </p>
+          <button class="button w-2/4">
+            <span class="button_top"> selengkapnya </span>
+          </button>
+        </div>
+        <div class="card-blog">
+          <img src="/img/hero-img.JPG" alt="" />
+          <h1 class="title" style="font-family: 'Raleway'">
+            Upacara Nusantara Spirit day
+          </h1>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            odit recusandae ad corporis, sequi iusto cumque quia accusamus
+            aspernatur nostrum.
+          </p>
+          <button class="button w-2/4">
+            <span class="button_top"> selengkapnya </span>
+          </button>
+        </div>
+        <div class="card-blog">
+          <img src="/img/hero-img.JPG" alt="" />
+          <h1 class="title" style="font-family: 'Raleway'">
+            Upacara Nusantara Spirit day
+          </h1>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            odit recusandae ad corporis, sequi iusto cumque quia accusamus
+            aspernatur nostrum.
+          </p>
+          <button class="button w-2/4">
+            <span class="button_top"> selengkapnya </span>
+          </button>
+        </div>
+        <div class="card-blog">
+          <img src="/img/hero-img.JPG" alt="" />
+          <h1 class="title" style="font-family: 'Raleway'">
+            Upacara Nusantara Spirit day
+          </h1>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            odit recusandae ad corporis, sequi iusto cumque quia accusamus
+            aspernatur nostrum.
+          </p>
+          <button class="button w-2/4">
+            <span class="button_top"> selengkapnya </span>
+          </button>
+        </div>
+        <div class="card-blog">
+          <img src="/img/hero-img.JPG" alt="" />
+          <h1 class="title" style="font-family: 'Raleway'">
+            Upacara Nusantara Spirit day
+          </h1>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            odit recusandae ad corporis, sequi iusto cumque quia accusamus
+            aspernatur nostrum.
+          </p>
+          <button class="button w-2/4">
+            <span class="button_top"> selengkapnya </span>
+          </button>
+        </div>
+        <div class="card-blog">
+          <img src="/img/hero-img.JPG" alt="" />
+          <h1 class="title" style="font-family: 'Raleway'">
+            Upacara Nusantara Spirit day
+          </h1>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            odit recusandae ad corporis, sequi iusto cumque quia accusamus
+            aspernatur nostrum.
+          </p>
+          <button class="button w-2/4">
+            <span class="button_top"> selengkapnya </span>
+          </button>
+        </div>
+        <div class="card-blog">
+          <img src="/img/hero-img.JPG" alt="" />
+          <h1 class="title" style="font-family: 'Raleway'">
+            Upacara Nusantara Spirit day
+          </h1>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            odit recusandae ad corporis, sequi iusto cumque quia accusamus
+            aspernatur nostrum.
+          </p>
+          <button class="button w-2/4">
+            <span class="button_top"> selengkapnya </span>
+          </button>
+        </div>
+        <div class="card-blog">
+          <img src="/img/hero-img.JPG" alt="" />
+          <h1 class="title" style="font-family: 'Raleway'">
+            Upacara Nusantara Spirit day
+          </h1>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+            odit recusandae ad corporis, sequi iusto cumque quia accusamus
+            aspernatur nostrum.
+          </p>
+          <button class="button w-2/4">
+            <span class="button_top"> selengkapnya </span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Sect -->
+    <footer
+      class="footer w-full h-auto p-5 lg:p-12 bg-white border border-slate-900 border-b-8 border-r-8 mt-28 rounded-md md:"
+    >
+      <div class="top-content lg:flex lg:justify-between">
+        <div class="school-info">
+          <div class="end-info mt-5">
+            <div
+              class="logo flex justify-center items-center lg:justify-start lg:items-start gap-3"
+            >
+              <img
+                src="./img/logo-idn.png"
+                alt="logo-sekolah"
+                width="40px"
+                height="40px"
+              />
+              <h1 class="font-bold text-lg">SMA IT HSI-IDN</h1>
+            </div>
+            <p class="desc text-center mx-auto mt-5 w-4/5 lg:text-left lg:mx-0">
+              Dengan bimbingan para mentor yang berpengalaman, santri akan siap
+              menghadapi tantangan di era digital.
+            </p>
+            <div class="contact-container flex flex-col gap-3 mt-10">
+              <div class="contact">
+                <div class="icon-contact">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 96"
+                    id="email"
+                    class="fill-slate-900 w-6 h-6"
+                  >
+                    <g>
+                      <path
+                        d="M0 11.283V8a8 8 0 0 1 8-8h112a8 8 0 0 1 8 8v3.283l-64 40zm66.12 48.11a4.004 4.004 0 0 1-4.24 0L0 20.717V88a8 8 0 0 0 8 8h112a8 8 0 0 0 8-8V20.717z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <p class="desc ml-2">smaithisidn@gmail.com</p>
+              </div>
+              <div class="contact">
+                <div class="icon-contact">
+                  <svg
+                    class="fill-slate-900 w-6 h-6"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.25 3.75C1.25 2.36929 2.36929 1.25 3.75 1.25H4.89302C5.61 1.25 6.23498 1.73796 6.40887 2.43354L7.33037 6.11952C7.48284 6.72942 7.25495 7.37129 6.75202 7.74849L5.674 8.557C5.56206 8.64096 5.53772 8.7639 5.56917 8.84974C6.51542 11.4329 8.5671 13.4846 11.1503 14.4308C11.2361 14.4623 11.359 14.4379 11.443 14.326L12.2515 13.248C12.6287 12.7451 13.2706 12.5172 13.8805 12.6696L17.5665 13.5911C18.262 13.765 18.75 14.39 18.75 15.107V16.25C18.75 17.6307 17.6307 18.75 16.25 18.75H14.375C7.12626 18.75 1.25 12.8737 1.25 5.625V3.75Z"
+                      fill="#262626"
+                    />
+                  </svg>
+                </div>
+                <p class="desc ml-2">+62 896-2303-9600</p>
+              </div>
+              <div class="contact">
+                <div class="icon-contact">
+                  <svg
+                    class="fill-slate-900 w-6 h-6"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.61646 18.6259C9.64163 18.6405 9.66141 18.6517 9.67542 18.6596L9.69869 18.6726C9.88441 18.7745 10.1148 18.7738 10.3007 18.6729L10.3246 18.6596C10.3386 18.6517 10.3584 18.6405 10.3835 18.6259C10.4339 18.5967 10.5058 18.5542 10.5963 18.4985C10.7771 18.3872 11.0323 18.223 11.3372 18.0076C11.9459 17.5776 12.7581 16.9395 13.5721 16.1061C15.1922 14.4474 16.875 11.9551 16.875 8.75C16.875 4.95304 13.797 1.875 10 1.875C6.20304 1.875 3.125 4.95304 3.125 8.75C3.125 11.9551 4.80777 14.4474 6.42788 16.1061C7.24188 16.9395 8.05409 17.5776 8.66282 18.0076C8.96771 18.223 9.22295 18.3872 9.40375 18.4985C9.49419 18.5542 9.56612 18.5967 9.61646 18.6259ZM10 11.25C11.3807 11.25 12.5 10.1307 12.5 8.75C12.5 7.36929 11.3807 6.25 10 6.25C8.61929 6.25 7.5 7.36929 7.5 8.75C7.5 10.1307 8.61929 11.25 10 11.25Z"
+                      fill="#262626"
+                    />
+                  </svg>
+                </div>
+                <p class="desc ml-2">Masjid Ar Royyan, Baledono, Purworejo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navigation grid gap-3 grid-cols-2 mt-5 lg:grid-cols-3">
+          <ul class="nav-item">
+            <li><a href="#" class="font-bold">Home</a></li>
+            <li><a href="#">Values</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="nav-item">
+            <li><a href="#" class="font-bold">Contact Us</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Map & Direction</a></li>
+          </ul>
+          <ul class="nav-item">
+            <li><a href="#" class="font-bold">Blog</a></li>
+            <li><a href="#">Lastest Updates</a></li>
+            <li><a href="#">Other Articles</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="copyright-content border-t border-b border-slate-900 pt-6 pb-6 mt-10 lg:flex lg:justify-between"
+      >
+        <ul class="copyright">
+          <li class="desc text-[14px] px-1">Terms of Service</li>
+          <li class="desc text-[14px] px-1">Privacy Policy</li>
+          <li class="desc text-[14px] px-1">Cookie Policy</li>
+        </ul>
+        <ul class="sosmed-icon">
+          <li class="bg-bg-secondary border border-slate-900 rounded-md p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              class="fill-slate-900 w-6 h-6"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+              ></path>
+            </svg>
+          </li>
+          <li class="bg-bg-secondary border border-slate-900 rounded-md p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              class="fill-slate-900 w-6 h-6"
+              viewBox="0 0 64 64"
+            >
+              <path
+                d="M 21.580078 7 C 13.541078 7 7 13.544938 7 21.585938 L 7 42.417969 C 7 50.457969 13.544938 57 21.585938 57 L 42.417969 57 C 50.457969 57 57 50.455062 57 42.414062 L 57 21.580078 C 57 13.541078 50.455062 7 42.414062 7 L 21.580078 7 z M 47 15 C 48.104 15 49 15.896 49 17 C 49 18.104 48.104 19 47 19 C 45.896 19 45 18.104 45 17 C 45 15.896 45.896 15 47 15 z M 32 19 C 39.17 19 45 24.83 45 32 C 45 39.17 39.169 45 32 45 C 24.83 45 19 39.169 19 32 C 19 24.831 24.83 19 32 19 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z"
+              ></path>
+            </svg>
+          </li>
+          <li class="bg-bg-secondary border border-slate-900 rounded-md p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              class="fill-slate-900 w-6 h-6"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"
+              ></path>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <p class="font-medium text-sm text-[#656567] text-center mt-5">
+        Copyright © [2024] sma it hsiidn. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
