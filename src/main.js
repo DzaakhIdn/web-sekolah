@@ -63,3 +63,12 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+var change = document.querySelectorAll(".button");
+
+change.forEach((button) => {
+    button.addEventListener("click", function(){
+        window.location.href = "blog-index.html"
+    })
+})

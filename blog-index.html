@@ -43,7 +43,7 @@
       class="border-[2px] border-slate-800 rounded-md relative flex flex-col overflow-hidden p-4 md:mx-auto md:flex-row md:items-center mt-5"
     >
       <a
-        href="#"
+        href="index.html"
         class="flex items-center whitespace-nowrap text-2xl font-black gap-2"
       >
         <img
@@ -83,7 +83,7 @@
           class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0"
         >
           <li class="text-gray-600 md:mr-12 hover:text-blue-600">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li class="text-gray-600 md:mr-12 hover:text-blue-600">
             <a href="#">About Us</a>
@@ -92,7 +92,7 @@
             <a href="#">Academics</a>
           </li>
           <li class="text-gray-600 md:mr-12 hover:text-blue-600">
-            <a href="#">Blog</a>
+            <a href="blog-index.html">Blog</a>
           </li>
           <li class="text-gray-600 md:mr-12 hover:text-blue-600">
             <button
@@ -157,6 +157,30 @@
 
       <!-- Card Container -->
       <div class="card-blog-container">
+        <div class="card-blog lg:col-span-4">
+          <h1
+            class="title font-extrabold text-5xl"
+            style="font-family: 'Raleway'"
+          >
+            Most read blogs
+          </h1>
+          <img src="/img/hero-2.jpg" alt="" class="w-auto h-auto"/>
+          <h1 class="title lg:text-[50px]" style="font-family: 'Raleway'">
+            Upacara Nusantara Spirit day
+          </h1>
+          <p class="desc lg:w-3/4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Consequuntur voluptates iure, dolorum nostrum minus voluptate ad
+            iusto. Provident deleniti est aperiam repudiandae labore. Minus
+            temporibus ullam consectetur amet doloribus? Officia maiores,
+            cumque, incidunt delectus facere eos libero, qui veniam quam omnis
+            non! Laboriosam, magnam consequatur!
+          </p>
+          <button class="button-blog button w-3/4">
+            <span class="button_top"> selengkapnya </span>
+          </button>
+        </div>
+
         <div class="card-blog">
           <img src="/img/hero-img.JPG" alt="" />
           <h1 class="title" style="font-family: 'Raleway'">
@@ -167,7 +191,7 @@
             odit recusandae ad corporis, sequi iusto cumque quia accusamus
             aspernatur nostrum.
           </p>
-          <button class="button w-2/4">
+          <button class="button-blog button w-3/4">
             <span class="button_top"> selengkapnya </span>
           </button>
         </div>
@@ -181,7 +205,7 @@
             odit recusandae ad corporis, sequi iusto cumque quia accusamus
             aspernatur nostrum.
           </p>
-          <button class="button w-2/4">
+          <button class="button-blog button w-3/4">
             <span class="button_top"> selengkapnya </span>
           </button>
         </div>
@@ -195,7 +219,7 @@
             odit recusandae ad corporis, sequi iusto cumque quia accusamus
             aspernatur nostrum.
           </p>
-          <button class="button w-2/4">
+          <button class="button-blog button w-3/4">
             <span class="button_top"> selengkapnya </span>
           </button>
         </div>
@@ -209,7 +233,7 @@
             odit recusandae ad corporis, sequi iusto cumque quia accusamus
             aspernatur nostrum.
           </p>
-          <button class="button w-2/4">
+          <button class="button-blog button w-3/4">
             <span class="button_top"> selengkapnya </span>
           </button>
         </div>
@@ -223,7 +247,7 @@
             odit recusandae ad corporis, sequi iusto cumque quia accusamus
             aspernatur nostrum.
           </p>
-          <button class="button w-2/4">
+          <button class="button-blog button w-3/4">
             <span class="button_top"> selengkapnya </span>
           </button>
         </div>
@@ -237,35 +261,7 @@
             odit recusandae ad corporis, sequi iusto cumque quia accusamus
             aspernatur nostrum.
           </p>
-          <button class="button w-2/4">
-            <span class="button_top"> selengkapnya </span>
-          </button>
-        </div>
-        <div class="card-blog">
-          <img src="/img/hero-img.JPG" alt="" />
-          <h1 class="title" style="font-family: 'Raleway'">
-            Upacara Nusantara Spirit day
-          </h1>
-          <p class="desc">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            odit recusandae ad corporis, sequi iusto cumque quia accusamus
-            aspernatur nostrum.
-          </p>
-          <button class="button w-2/4">
-            <span class="button_top"> selengkapnya </span>
-          </button>
-        </div>
-        <div class="card-blog">
-          <img src="/img/hero-img.JPG" alt="" />
-          <h1 class="title" style="font-family: 'Raleway'">
-            Upacara Nusantara Spirit day
-          </h1>
-          <p class="desc">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            odit recusandae ad corporis, sequi iusto cumque quia accusamus
-            aspernatur nostrum.
-          </p>
-          <button class="button w-2/4">
+          <button class="button-blog button w-3/4">
             <span class="button_top"> selengkapnya </span>
           </button>
         </div>
@@ -422,5 +418,15 @@
         Copyright © [2024] sma it hsiidn. All rights reserved.
       </p>
     </footer>
+
+    <script>
+      var btnBlog = document.querySelectorAll(".button-blog");
+
+      btnBlog.forEach((button) => {
+        button.addEventListener("click", function () {
+          window.location.href = "blog.html";
+        });
+      });
+    </script>
   </body>
 </html>
