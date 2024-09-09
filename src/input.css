@@ -113,13 +113,13 @@
     @apply flex flex-col lg:flex-row gap-5 justify-center lg:items-start items-center;
   }
   .content_blog .isi {
-    @apply bg-white border border-slate-800 rounded-md p-3 flex flex-col gap-2 lg:w-[843px];
+    @apply bg-white border border-slate-800 rounded-md p-3 flex flex-col gap-2 lg:w-[843px] xl:w-[1,122px];
   }
   .blog-icon {
     @apply bg-white border border-slate-900 rounded-md p-2;
   }
   .like {
-    @apply lg:w-[357px] lg:h-[142px] w-full h-auto bg-bg-secondary border border-slate-900 rounded-md flex justify-center flex-col p-2;
+    @apply lg:w-[357px] xl:w-[441px] lg:h-[142px] w-full h-auto bg-bg-secondary border border-slate-900 rounded-md flex justify-center flex-col p-2;
   }
   .like-content {
     @apply flex flex-col gap-[10px];
