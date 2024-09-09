@@ -109,4 +109,10 @@
   .title-content {
     @apply font-semibold text-slate-900;
   }
+  .content_blog {
+    @apply flex flex-col gap-3;
+  }
+  .content_blog .isi {
+    @apply bg-white border border-slate-800 rounded-md p-3 flex flex-col gap-2;
+  }
 }
